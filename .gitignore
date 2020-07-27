@@ -1,1 +1,4 @@
 .Rproj.user
+demo.Rcheck/
+demo*.tar.gz
+demo*.tgz
