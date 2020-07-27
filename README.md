@@ -1,3 +1,3 @@
 # demo
 
-A package for demos
+A repo for demos
