@@ -1,0 +1,64 @@
+---
+title: "Praise"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, comment = "#>")
+```
+
+
+
+The praise package make you and others feel good.
+
+```{r}
+library(praise)
+
+praise()
+```
+
+You can supply a template, and `praise()` fills in random words of the specified part of speech:
+
+```{r}
+praise("${EXCLAMATION}! You have done this ${adverb_manner}!")
+```
+
+Supported parts of speech:
+
+```{r}
+lapply(praise_parts, head)
+```
+
+## Your turn
+
+1. Fork owner/repo and clone your/repo.
+
+![](http://i.imgur.com/bSKgaSd.png)
+
+-- <https://happygitwithr.com/fork-and-clone.html>
+
+Setup Git (once per computer)
+
+```{r}
+library(usethis)
+
+# Your real name and the email associated with your GitHub account
+use_git_config(user.name = "Mauro Lepore", user.email = "maurolepore@gmail.com")
+
+# Check: your user.name and user.email should appear under "User"
+git_sitrep()
+```
+
+3. Create a new branch.
+
+4. Modify this code to create your own `praise()`.
+
+```{r}
+praise("I'm sure you will ${ADVERB} modify this ${adjective} template")
+```
+
+5. Commit.
+
+6. Push to origin (your/repo).
+
+7. Submit a pull request to upstream (owner/repo).

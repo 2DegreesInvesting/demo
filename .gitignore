@@ -2,3 +2,5 @@
 demo.Rcheck/
 demo*.tar.gz
 demo*.tgz
+.Rhistory
+.RData
