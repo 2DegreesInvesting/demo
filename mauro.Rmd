@@ -1,6 +1,6 @@
 ---
-title: "Untitled"
-output: html_document
+title: "Mauro"
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
