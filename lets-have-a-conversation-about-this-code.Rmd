@@ -1,0 +1,23 @@
+---
+title: "Untitled"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = "#>", error = TRUE, collapse = TRUE)
+```
+
+Packages.
+
+```{r}
+library(tidyverse)
+library(here)
+```
+
+Data.
+
+```{r}
+my_mtcars <- read_csv(here("data", "mtcars.csv"))
+my_mtcars %>% filter(cyl > 4)
+```
+
